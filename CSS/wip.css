@@ -1,0 +1,45 @@
+/* Base styles that apply to all devices */
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  background-color: #1e1e1e;
+  min-height: 100vh; /* Make height responsive to the content or viewport */
+  text-align: left;
+  font-size: 36px; /* You may want to scale this down on smaller screens */
+  color: #fff;
+  font-family: 'Inria Sans';
+}
+
+/* Position elements absolutely within .container, which is relative */
+.stay-tuned-work {
+  position: absolute;
+  top: 102px;
+  left: 0px;
+  font-family: 'Inria Sans';
+
+}
+
+.coming-soon, .comming-soon { /* Note: corrected class name for consistency */
+  position: absolute;
+  font-family: 'Faster One';
+}
+
+.coming-soon {
+  top: 0px;
+  left: 0px;
+  font-size: 96px; /* Large fonts for large screens, adjust below */
+}
+
+.comming-soon {
+  top: 50%; /* Center vertically in all devices */
+  left: 50%; /* Center horizontally in all devices */
+  transform: translate(-50%, -50%); /* Adjust position to truly center */
+  width: 80%; /* Responsive width */
+  max-width: 780px; /* Maximum width */
+  height: auto; /* Height auto for scalability */
+}
